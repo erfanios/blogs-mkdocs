@@ -1,3 +1,3 @@
-[toc]
+# Table of contents - Inhaltsverzeichnis
 
-# Hello
+[TOC]

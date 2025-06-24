@@ -4,4 +4,7 @@ theme:
   palette:
     primary: orange
     accent: deep orange
-
+markdown_extensions:
+  - toc:
+      baselevel: "3"
+      toc_depth: "3"
