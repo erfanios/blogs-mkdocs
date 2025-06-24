@@ -18,13 +18,14 @@ INDEX_FILE="index.md"
 
 cd "$DOCS_DIR" || { echo "Fehler: $DOCS_DIR existiert nicht."; exit 1; }
 
-echo "# Table of contents - Inhaltsverzeichnis" > "$INDEX_FILE"
-echo "" >> "$INDEX_FILE"
+> "$INDEX_FILE"
+#echo "# Table of contents - Inhaltsverzeichnis" > "$INDEX_FILE"
+# echo "" >> "$INDEX_FILE"
 
 find . -type d | sort | while read dir; do
   if [ "$dir" != "." ]; then
     rel_dir="${dir#./}"
-    echo "## -> ${rel_dir}" >> "$INDEX_FILE"
+    echo "## [    ${rel_dir}    ]" >> "$INDEX_FILE"
     echo "" >> "$INDEX_FILE"
   fi
 

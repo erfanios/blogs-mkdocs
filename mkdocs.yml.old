@@ -1,0 +1,10 @@
+site_name: My Documentations
+theme:
+  name: material
+  palette:
+    primary: orange
+    accent: deep orange
+markdown_extensions:
+  - toc:
+      baselevel: "1"
+      toc_depth: "1"
