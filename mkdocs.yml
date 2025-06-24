@@ -1,0 +1,7 @@
+site_name: My Documentations
+theme:
+  name: material
+  palette:
+    primary: orange
+    accent: deep orange
+

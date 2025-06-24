@@ -1,0 +1,24 @@
+# Python cache (if you ever run mkdocs locally)
+__pycache__/
+*.py[cod]
+
+# Site build output
+/site/
+/docs/site/
+
+# Virtual environment (if any)
+venv/
+.env/
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# macOS files
+.DS_Store
+
+# Editor folders/files
+.vscode/
+.idea/
+*.swp
+

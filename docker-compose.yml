@@ -1,0 +1,11 @@
+services:
+  mkdocs:
+    image: squidfunk/mkdocs-material
+    container_name: mkdocs-material
+    ports:
+      - "20888:8000"
+    volumes:
+      - ./docs:/docs/docs        # Deine Markdown-Dateien außerhalb
+      - ./mkdocs.yml:/docs/mkdocs.yml
+#    command: sh -c "mkdocs-material serve -a 0.0.0.0:20888"
+
