@@ -36,6 +36,22 @@ colspec = {|Q[l,m]|X[l,m]|}
 \end{talltblr}
 ```
 
+## Prioritizing Column Width with Weights
+
+If you want one column (e.g. the third) to get **more horizontal space**, use weights in the `X[...]` column specification:
+
+```latex
+colspec = {|X[1,l]|X[1,l]|X[2,l]|}
+```
+
+| Column     | Weight | Description                                    |
+|------------|--------|------------------------------------------------|
+| 1st        | `1`    | Normal width share                             |
+| 2nd        | `1`    | Normal width share                             |
+| 3rd        | `2`    | **Gets double the space of the others**        |
+
+You can apply any combination like `X[3,l]`, `X[1,l]`, etc., to control which columns get more space.
+
 ## Note
 
 Using `Q[...]` requires enabling the `varwidth` library:
@@ -45,4 +61,3 @@ Using `Q[...]` requires enabling the `varwidth` library:
 ```
 
 Place this after loading the `tabularray` package to allow automatic width adjustment.
-
