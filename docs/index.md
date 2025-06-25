@@ -5,8 +5,8 @@
 
 ## [    latex    ]
 
-- [Documentation: `colspec` in `tabularray` (LaTeX)](latex/colspec)
 
 ## [    latex/tabularray    ]
 
+- [Documentation: `colspec` in `tabularray` (LaTeX)](latex/tabularray/colspec)
 
