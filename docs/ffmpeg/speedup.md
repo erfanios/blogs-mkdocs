@@ -36,7 +36,8 @@ CRF is a quality setting used when encoding with libx264 (H.264) or libx265 (H.2
 
 > Tip: If you're looking for an output that is roughly "visually lossless" but not technically lossless, use a -crf value of around 17 or 18 (you'll have to experiment to see which value is acceptable for you). It will likely be indistinguishable from the source and not result in a huge, possibly incompatible file like true lossless mode.
 
-### CRF Scale (Lower = Better Quality)
+
+## CRF Scale (Lower = Better Quality)
 - 0 → lossless (huge files)
 - 18 → visually lossless (most people can't see difference from original)
 - 23 → default (good quality, smaller size)
