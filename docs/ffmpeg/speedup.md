@@ -41,3 +41,10 @@ CRF is a quality setting used when encoding with libx264 (H.264) or libx265 (H.2
 - 18 → visually lossless (most people can't see difference from original)
 - 23 → default (good quality, smaller size)
 - 28+ → noticeable compression artifacts
+
+
+Ref: https://trac.ffmpeg.org/wiki/Encode/H.264#Overwritingdefaultpresetsettings
+
+
+
+
