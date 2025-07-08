@@ -5,6 +5,7 @@
 
 ## [    ffmpeg    ]
 
+- [Looping a video or more](ffmpeg/loop)
 - [Speeding Up a video](ffmpeg/speedup)
 
 ## [    git    ]
