@@ -3,6 +3,10 @@
 
 - [🧠 Detecting Piped Input vs Interactive Input in Bash (`-t 0` Explained)](Bash/bash-stdin-interactive-vs-piped)
 
+## [    docker    ]
+
+- [Docker Disk Usage – How to Find Out What’s Taking Space](docker/detect-image-size)
+
 ## [    ffmpeg    ]
 
 - [Looping a video or more](ffmpeg/loop)
