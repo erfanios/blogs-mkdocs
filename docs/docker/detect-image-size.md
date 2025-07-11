@@ -1,4 +1,3 @@
-````markdown
 # Docker Disk Usage – How to Find Out What’s Taking Space
 
 If your Docker data directory is taking up unexpected space (e.g. 1.7 TB), here’s how you can quickly check what's using it.
