@@ -1,6 +1,7 @@
 
 ## [    Bash    ]
 
+- [.bashrc](Bash/bashrc)
 - [🧠 Detecting Piped Input vs Interactive Input in Bash (`-t 0` Explained)](Bash/bash-stdin-interactive-vs-piped)
 
 ## [    docker    ]
