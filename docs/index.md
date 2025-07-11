@@ -5,6 +5,7 @@
 
 ## [    docker    ]
 
+- [Changing data path](docker/change-default-path)
 - [Docker Disk Usage – How to Find Out What’s Taking Space](docker/detect-image-size)
 
 ## [    ffmpeg    ]
