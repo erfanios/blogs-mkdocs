@@ -1,4 +1,4 @@
-# Current voltage
+# Current wattage
 
 Use the following command to view the charger's wattage.
 
