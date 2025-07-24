@@ -27,5 +27,5 @@
 
 ## [    macos    ]
 
-- [Current voltage](macos/current_voltage)
+- [Current voltage](macos/current_wattage)
 
