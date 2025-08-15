@@ -27,5 +27,9 @@
 
 ## [    macos    ]
 
-- [Current voltage](macos/current_wattage)
+- [Current wattage](macos/current_wattage)
+
+## [    ruby    ]
+
+- [install-on-macos](ruby/install-on-macos)
 
