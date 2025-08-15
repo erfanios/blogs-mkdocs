@@ -20,10 +20,11 @@ ruby -v
 gem update --system
 ```
 
-
+run:
+```bash
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
 echo 'eval "$(rbenv init - bash)"' >> ~/.bash_profile
-
+```
 ### **Option 2 — Install an Older Compatible RubyGems**
 If you can’t upgrade Ruby right now, you can update RubyGems only to the latest version that works with Ruby 2.6.
 
@@ -39,5 +40,8 @@ gem install rubygems-update -v 3.3.26
 update_rubygems
 ```
 
+run:
+```bash
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
 echo 'eval "$(rbenv init - bash)"' >> ~/.bash_profile
+```
