@@ -16,6 +16,7 @@
 
 ## [    git    ]
 
+- [Copy a branch to another repository](git/Copy a branch to another repository)
 - [How to Rename Author and Email of a Commit](git/rename-commit-author)
 - [Considering you want to delete main with all commits](git/Wip everything from branch)
 
