@@ -14,6 +14,10 @@
 - [Looping a video or more](ffmpeg/loop)
 - [Speeding Up a video](ffmpeg/speedup)
 
+## [    firewall    ]
+
+- [Fail2ban](firewall/fail2ban)
+
 ## [    git    ]
 
 - [Copy a branch to another repository](git/Copy a branch to another repository)
