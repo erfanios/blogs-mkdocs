@@ -3,6 +3,7 @@
 
 - [.bashrc](Bash/bashrc)
 - [🧠 Detecting Piped Input vs Interactive Input in Bash (`-t 0` Explained)](Bash/bash-stdin-interactive-vs-piped)
+- [How to use Tar for coping a folder into another user with sudo](Bash/Using-tar-with-pipe)
 
 ## [    docker    ]
 
@@ -38,4 +39,8 @@
 ## [    ruby    ]
 
 - [install-on-macos](ruby/install-on-macos)
+
+## [    web-dev    ]
+
+- [How to create a react Project with browser routing](web-dev/Create-React-Projekt-with-Router)
 
