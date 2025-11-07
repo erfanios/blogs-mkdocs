@@ -4,6 +4,7 @@ services:
     container_name: mkdocs-material
     ports:
       - "20888:8000"
+    restart: unless-stopped
     volumes:
       - ./docs:/docs/docs        # Deine Markdown-Dateien außerhalb
       - ./mkdocs.yml:/docs/mkdocs.yml
