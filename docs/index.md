@@ -1,9 +1,9 @@
 
 ## [    Bash    ]
 
-- [.bashrc](Bash/bashrc)
-- [🧠 Detecting Piped Input vs Interactive Input in Bash (`-t 0` Explained)](Bash/bash-stdin-interactive-vs-piped)
 - [How to use Tar for coping a folder into another user with sudo](Bash/Using-tar-with-pipe)
+- [🧠 Detecting Piped Input vs Interactive Input in Bash (`-t 0` Explained)](Bash/bash-stdin-interactive-vs-piped)
+- [.bashrc](Bash/bashrc)
 
 ## [    docker    ]
 
@@ -22,8 +22,8 @@
 ## [    git    ]
 
 - [Copy a branch to another repository](git/Copy a branch to another repository)
-- [How to Rename Author and Email of a Commit](git/rename-commit-author)
 - [Considering you want to delete main with all commits](git/Wip everything from branch)
+- [How to Rename Author and Email of a Commit](git/rename-commit-author)
 
 ## [    latex    ]
 
@@ -34,11 +34,16 @@
 
 ## [    macos    ]
 
+- [MacBook Pro (Late 2013) Thermal & Performance Optimization Guide](macos/Disabling-Turbo-Boost)
 - [Current wattage](macos/current_wattage)
 
 ## [    ruby    ]
 
 - [install-on-macos](ruby/install-on-macos)
+
+## [    vim    ]
+
+- [Command-line mode](vim/Command-line-mode)
 
 ## [    web-dev    ]
 
