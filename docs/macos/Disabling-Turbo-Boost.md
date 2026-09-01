@@ -33,7 +33,7 @@ This occurs because OpenCore's default System Integrity Protection (SIP) configu
 
 ## 3. Step 2: Apply Boot Arguments via Terminal
 
-After rebooting, open **Terminal** (`/Applications/Utilities/Terminal.app`) and run one of the following commands:
+After rebooting, open Terminal and run one of the following commands:
 
 ### Option A: Disable CPU Turbo Boost Only (Recommended)
 Keeps both Intel Iris Pro and NVIDIA GeForce GT 750M functional, but caps CPU at base clock (2.3 GHz):
