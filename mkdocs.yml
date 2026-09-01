@@ -1,19 +1,17 @@
 site_name: My Documentations
+
 theme:
   name: mkdocs
-  palette:
-    scheme: default
-    primary: white
-    accent: grey
-  features:
-    - navigation.instant
-    - navigation.sections
-    - navigation.expand
-    - navigation.indexes
-    - navigation.tracking 
-#    - toc.integrate 
-    - search.suggest
-    - search.highlight
+
+plugins:
+  - search
+
+extra_css:
+  - extra/custom.css
+
+extra_javascript:
+  - extra/shortcut.js
+
 markdown_extensions:
   - toc:
       baselevel: "3"
