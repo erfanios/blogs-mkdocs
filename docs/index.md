@@ -4,11 +4,16 @@
 - [How to use Tar for coping a folder into another user with sudo](Bash/Using-tar-with-pipe)
 - [🧠 Detecting Piped Input vs Interactive Input in Bash (`-t 0` Explained)](Bash/bash-stdin-interactive-vs-piped)
 - [.bashrc](Bash/bashrc)
+- [A collection of different find commands](Bash/find)
+- [Tar-Komprimierung & Entpacken](Bash/tar)
 
 ## [    docker    ]
 
 - [Changing data path](docker/change-default-path)
 - [Docker Disk Usage – How to Find Out What’s Taking Space](docker/detect-image-size)
+
+## [    extra    ]
+
 
 ## [    ffmpeg    ]
 
