@@ -6,7 +6,6 @@ services:
       - "20888:8000"
     restart: unless-stopped
     volumes:
-      - ./docs:/docs/docs        # Deine Markdown-Dateien außerhalb
-      - ./mkdocs.yml:/docs/mkdocs.yml
+      - .:/docs
 #    command: sh -c "mkdocs-material serve -a 0.0.0.0:20888"
 
