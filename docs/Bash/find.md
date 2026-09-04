@@ -11,4 +11,4 @@ find . -maxdepth 1 -type f -mtime +$age_of_files
 # or
 
 find "$abs_path" -maxdepth 1 -type f -mtime +$age_of_file -delete
-´´´
+```
