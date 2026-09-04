@@ -49,3 +49,56 @@ Der schnellste Standard-Klassiker für den alltäglichen Gebrauch.
 ```bash
 tar -cvzf archiv.tar.gz /pfad/zum/ordner/
 ```
+
+---
+
+## 3. Archive entpacken (Dekomprimieren)
+
+!!! tip "Automatisches Erkennen"
+    Moderne `tar`-Versionen erkennen das Komprimierungsformat beim Entpacken meist automatisch über `-xvf`. Die expliziten Flags garantieren jedoch die korrekte Dekomprimierung.
+
+### XZ (`.tar.xz`) entpacken
+```bash
+# In den aktuellen Ordner entpacken
+tar -xvJf archiv.tar.xz
+
+# In einen spezifischen Ordner entpacken
+tar -xvJf archiv.tar.xz -C /ziel/pfad/
+```
+
+### Zstandard (`.tar.zst`) entpacken
+```bash
+# In den aktuellen Ordner entpacken
+tar --zstd -xvf archiv.tar.zst
+
+# In einen spezifischen Ordner entpacken
+tar --zstd -xvf archiv.tar.zst -C /ziel/pfad/
+```
+
+### Bzip2 (`.tar.bz2`) entpacken
+```bash
+# In den aktuellen Ordner entpacken
+tar -xvjf archiv.tar.bz2
+
+# In einen spezifischen Ordner entpacken
+tar -xvjf archiv.tar.bz2 -C /ziel/pfad/
+```
+
+### Gzip (`.tar.gz`) entpacken
+```bash
+# In den aktuellen Ordner entpacken
+tar -xvzf archiv.tar.gz
+
+# In einen spezifischen Ordner entpacken
+tar -xvzf archiv.tar.gz -C /ziel/pfad/
+```
+
+---
+
+## 4. Wichtigste Flags im Überblick
+
+* `-c` (create): Erstellt ein neues Archiv.
+* `-x` (extract): Entpackt ein bestehendes Archiv.
+* `-v` (verbose): Zeigt den Fortschritt/die verarbeiteten Dateien im Terminal an.
+* `-f` (file): Gibt den Dateinamen des Archivs an (MUSS am Ende der Optionen stehen).
+* `-C` (directory): Zielverzeichnis für das Entpacken.
