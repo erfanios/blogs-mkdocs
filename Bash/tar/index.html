@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Tar-Komprimierung &amp; Entpacken - My Documentations</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/django.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">My Documentations</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Bash</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../Using-tar-with-pipe/" class="dropdown-item">How to use Tar for coping a folder into another user with sudo</a>
+</li>
+                                    
+<li>
+    <a href="../bash-stdin-interactive-vs-piped/" class="dropdown-item">🧠 Detecting Piped Input vs Interactive Input in Bash (-t 0 Explained)</a>
+</li>
+                                    
+<li>
+    <a href="../bashrc/" class="dropdown-item">.bashrc</a>
+</li>
+                                    
+<li>
+    <a href="../find/" class="dropdown-item">A collection of different find commands</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Tar-Komprimierung &amp; Entpacken</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Docker</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../docker/change-default-path/" class="dropdown-item">Changing data path</a>
+</li>
+                                    
+<li>
+    <a href="../../docker/detect-image-size/" class="dropdown-item">Docker Disk Usage – How to Find Out What’s Taking Space</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Ffmpeg</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../ffmpeg/loop/" class="dropdown-item">Looping a video or more</a>
+</li>
+                                    
+<li>
+    <a href="../../ffmpeg/speedup/" class="dropdown-item">Speeding Up a video</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Firewall</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../firewall/fail2ban/" class="dropdown-item">Fail2ban</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Git</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../git/Copy%20a%20branch%20to%20another%20repository/" class="dropdown-item">Copy a branch to another repository</a>
+</li>
+                                    
+<li>
+    <a href="../../git/Wip%20everything%20from%20branch/" class="dropdown-item">Considering you want to delete main with all commits</a>
+</li>
+                                    
+<li>
+    <a href="../../git/rename-commit-author/" class="dropdown-item">How to Rename Author and Email of a Commit</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Latex</a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tabularray</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../latex/tabularray/colspec/" class="dropdown-item">Documentation: colspec in tabularray (LaTeX)</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Macos</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../macos/Disabling-Turbo-Boost/" class="dropdown-item">MacBook Pro (Late 2013) Thermal &amp; Performance Optimization Guide</a>
+</li>
+                                    
+<li>
+    <a href="../../macos/current_wattage/" class="dropdown-item">Current wattage</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Ruby</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../ruby/install-on-macos/" class="dropdown-item">Install on macos</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Vim</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../vim/Command-line-mode/" class="dropdown-item">Command-line mode</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Web dev</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../web-dev/Create-React-Projekt-with-Router/" class="dropdown-item">How to create a react Project with browser routing</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../find/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../docker/change-default-path/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="true">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#tar-komprimierung-entpacken" class="nav-link">Tar-Komprimierung &amp; Entpacken</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#1-ubersicht-der-algorithmen" class="nav-link">1. Übersicht der Algorithmen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#2-archive-erstellen-komprimieren" class="nav-link">2. Archive erstellen (Komprimieren)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#3-archive-entpacken-dekomprimieren" class="nav-link">3. Archive entpacken (Dekomprimieren)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#4-wichtigste-flags-im-uberblick" class="nav-link">4. Wichtigste Flags im Überblick</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="tar-komprimierung-entpacken">Tar-Komprimierung &amp; Entpacken<a class="headerlink" href="#tar-komprimierung-entpacken" title="Permanent link"></a></h1>
+<p>Eine Übersicht der verschiedenen Komprimierungs-Methoden mit <code>tar</code>, sortiert von der Standard-Komprimierung bis zur maximalen Dateigrößen-Reduzierung.</p>
+<h2 id="1-ubersicht-der-algorithmen">1. Übersicht der Algorithmen<a class="headerlink" href="#1-ubersicht-der-algorithmen" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Methode</th>
+<th style="text-align: left;"><code>tar</code>-Option</th>
+<th style="text-align: left;">Dateiendung</th>
+<th style="text-align: left;">Komprimierung</th>
+<th style="text-align: left;">Geschwindigkeit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>gzip</strong></td>
+<td style="text-align: left;"><code>-z</code></td>
+<td style="text-align: left;"><code>.tar.gz</code></td>
+<td style="text-align: left;">Standard</td>
+<td style="text-align: left;">Sehr schnell</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>bzip2</strong></td>
+<td style="text-align: left;"><code>-j</code></td>
+<td style="text-align: left;"><code>.tar.bz2</code></td>
+<td style="text-align: left;">Gut</td>
+<td style="text-align: left;">Langsam</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>zstd</strong></td>
+<td style="text-align: left;"><code>--zstd</code></td>
+<td style="text-align: left;"><code>.tar.zst</code></td>
+<td style="text-align: left;">Sehr gut</td>
+<td style="text-align: left;">Extrem schnell</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>xz</strong></td>
+<td style="text-align: left;"><code>-J</code></td>
+<td style="text-align: left;"><code>.tar.xz</code></td>
+<td style="text-align: left;"><strong>Maximal</strong></td>
+<td style="text-align: left;">Eher langsam</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-archive-erstellen-komprimieren">2. Archive erstellen (Komprimieren)<a class="headerlink" href="#2-archive-erstellen-komprimieren" title="Permanent link"></a></h2>
+<p>!!! tip "Hinweis zur Reihenfolge"
+    Das Flag <code>-f</code> erfordert immer direkt danach den Namen der Ziel-Archivdatei!</p>
+<h3 id="xz-hochste-komprimierung-kleinstmogliche-datei">XZ – Höchste Komprimierung (Kleinstmögliche Datei)<a class="headerlink" href="#xz-hochste-komprimierung-kleinstmogliche-datei" title="Permanent link"></a></h3>
+<p>Ideal für Archive, bei denen die Dateigröße die wichtigste Rolle spielt (oft 10–30 % kleiner als <code>.tar.gz</code>).</p>
+<pre><code class="language-bash"># Standard XZ-Komprimierung
+tar -cvJf archiv.tar.xz /pfad/zum/ordner/
+
+# Maximale XZ-Komprimierung (Komprimierungsstufe 9)
+XZ_OPT=-9 tar -cvJf archiv.tar.xz /pfad/zum/ordner/
+</code></pre>
+<h3 id="zstandard-zstd-beste-performance-hohe-komprimierung">Zstandard (zstd) – Beste Performance &amp; Hohe Komprimierung<a class="headerlink" href="#zstandard-zstd-beste-performance-hohe-komprimierung" title="Permanent link"></a></h3>
+<p>Komprimiert fast so stark wie XZ, ist aber beim Entpacken und Nutzen mehrerer CPU-Kerne extrem schnell.</p>
+<pre><code class="language-bash">tar --zstd -cvf archiv.tar.zst /pfad/zum/ordner/
+</code></pre>
+<h3 id="bzip2-klassische-alternative">Bzip2 – Klassische Alternative<a class="headerlink" href="#bzip2-klassische-alternative" title="Permanent link"></a></h3>
+<p>Bietet eine bessere Komprimierung als gzip, ist aber langsamer.</p>
+<pre><code class="language-bash">tar -cvjf archiv.tar.bz2 /pfad/zum/ordner/
+</code></pre>
+<h3 id="gzip-standard-kompatibilitat">Gzip – Standard &amp; Kompatibilität<a class="headerlink" href="#gzip-standard-kompatibilitat" title="Permanent link"></a></h3>
+<p>Der schnellste Standard-Klassiker für den alltäglichen Gebrauch.</p>
+<pre><code class="language-bash">tar -cvzf archiv.tar.gz /pfad/zum/ordner/
+</code></pre>
+<hr />
+<h2 id="3-archive-entpacken-dekomprimieren">3. Archive entpacken (Dekomprimieren)<a class="headerlink" href="#3-archive-entpacken-dekomprimieren" title="Permanent link"></a></h2>
+<p>!!! tip "Automatisches Erkennen"
+    Moderne <code>tar</code>-Versionen erkennen das Komprimierungsformat beim Entpacken meist automatisch über <code>-xvf</code>. Die expliziten Flags garantieren jedoch die korrekte Dekomprimierung.</p>
+<h3 id="xz-tarxz-entpacken">XZ (<code>.tar.xz</code>) entpacken<a class="headerlink" href="#xz-tarxz-entpacken" title="Permanent link"></a></h3>
+<pre><code class="language-bash"># In den aktuellen Ordner entpacken
+tar -xvJf archiv.tar.xz
+
+# In einen spezifischen Ordner entpacken
+tar -xvJf archiv.tar.xz -C /ziel/pfad/
+</code></pre>
+<h3 id="zstandard-tarzst-entpacken">Zstandard (<code>.tar.zst</code>) entpacken<a class="headerlink" href="#zstandard-tarzst-entpacken" title="Permanent link"></a></h3>
+<pre><code class="language-bash"># In den aktuellen Ordner entpacken
+tar --zstd -xvf archiv.tar.zst
+
+# In einen spezifischen Ordner entpacken
+tar --zstd -xvf archiv.tar.zst -C /ziel/pfad/
+</code></pre>
+<h3 id="bzip2-tarbz2-entpacken">Bzip2 (<code>.tar.bz2</code>) entpacken<a class="headerlink" href="#bzip2-tarbz2-entpacken" title="Permanent link"></a></h3>
+<pre><code class="language-bash"># In den aktuellen Ordner entpacken
+tar -xvjf archiv.tar.bz2
+
+# In einen spezifischen Ordner entpacken
+tar -xvjf archiv.tar.bz2 -C /ziel/pfad/
+</code></pre>
+<h3 id="gzip-targz-entpacken">Gzip (<code>.tar.gz</code>) entpacken<a class="headerlink" href="#gzip-targz-entpacken" title="Permanent link"></a></h3>
+<pre><code class="language-bash"># In den aktuellen Ordner entpacken
+tar -xvzf archiv.tar.gz
+
+# In einen spezifischen Ordner entpacken
+tar -xvzf archiv.tar.gz -C /ziel/pfad/
+</code></pre>
+<hr />
+<h2 id="4-wichtigste-flags-im-uberblick">4. Wichtigste Flags im Überblick<a class="headerlink" href="#4-wichtigste-flags-im-uberblick" title="Permanent link"></a></h2>
+<ul>
+<li><code>-c</code> (create): Erstellt ein neues Archiv.</li>
+<li><code>-x</code> (extract): Entpackt ein bestehendes Archiv.</li>
+<li><code>-v</code> (verbose): Zeigt den Fortschritt/die verarbeiteten Dateien im Terminal an.</li>
+<li><code>-f</code> (file): Gibt den Dateinamen des Archivs an (MUSS am Ende der Optionen stehen).</li>
+<li><code>-C</code> (directory): Zielverzeichnis für das Entpacken.</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

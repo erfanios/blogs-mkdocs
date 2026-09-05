@@ -1,0 +1,16 @@
+/* Den gesamten linken Sidebar-Container und das leere Card-Element löschen */
+.col-md-3,
+.bs-sidebar,
+#toc-collapse {
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+/* Den Hauptinhalt auf 100% Breite setzen */
+.col-md-9 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+}
