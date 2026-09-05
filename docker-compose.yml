@@ -1,6 +1,6 @@
 services:
   mkdocs:
-    image: squidfunk/mkdocs-material
+    image: picupup/mkdocs-serve
     container_name: mkdocs-material
     ports:
       - "20888:8000"
