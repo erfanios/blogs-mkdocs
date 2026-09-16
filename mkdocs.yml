@@ -9,6 +9,7 @@ theme:
   hljs_languages:
     - yaml
     - django
+    - bash
   shortcuts:
     help: 191    # ?
     next: 78     # n
@@ -30,3 +31,13 @@ markdown_extensions:
 #      baselevel: "3"
 #      toc_depth: "3"
 #      toc_depth: 2-3
+  - pymdownx.arithmatex:
+        generic: true
+  - pymdownx.betterem
+    
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js
+  - javascripts/katex.js
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css
