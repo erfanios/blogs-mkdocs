@@ -7,6 +7,14 @@
 - [A collection of different find commands](Bash/find)
 - [Tar-Komprimierung & Entpacken](Bash/tar)
 
+## [    Uni-Module    ]
+
+
+## [    Uni-Module/Lineare-Algebra-I    ]
+
+- [Elementarmatrizen und ihre NumPy-Entsprechungen](Uni-Module/Lineare-Algebra-I/Elementarmatrix)
+- [Einige Notizen](Uni-Module/Lineare-Algebra-I/notes)
+
 ## [    docker    ]
 
 - [Changing data path](docker/change-default-path)
@@ -29,6 +37,9 @@
 - [Copy a branch to another repository](git/Copy a branch to another repository)
 - [Considering you want to delete main with all commits](git/Wip everything from branch)
 - [How to Rename Author and Email of a Commit](git/rename-commit-author)
+
+## [    javascripts    ]
+
 
 ## [    latex    ]
 
