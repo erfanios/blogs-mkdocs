@@ -16,7 +16,8 @@ theme:
     previous: 80 # p
     search: 83   # s
 
-#plugins:
+plugins:
+  - glightbox
 #  - search
 
 #extra_css:
@@ -26,6 +27,10 @@ theme:
 #  - extra/shortcut.js
 
 markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.betterem
   - toc:
       permalink: 
 #      baselevel: "3"
@@ -33,7 +38,6 @@ markdown_extensions:
 #      toc_depth: 2-3
   - pymdownx.arithmatex:
         generic: true
-  - pymdownx.betterem
     
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js
