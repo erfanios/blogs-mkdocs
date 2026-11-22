@@ -1,0 +1,441 @@
+<!DOCTYPE html><html lang="en" data-bs-theme="auto"><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Elementarmatrizen und ihre NumPy-Entsprechungen - My Documentations</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled="">
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled="">
+        <link href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/django.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/bash.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+        </style></head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">My Documentations</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bash</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../Bash/Using-tar-with-pipe/" class="dropdown-item">How to use Tar for coping a folder into another user with sudo</a>
+</li>
+                                    
+<li>
+    <a href="../../../Bash/bash-stdin-interactive-vs-piped/" class="dropdown-item">🧠 Detecting Piped Input vs Interactive Input in Bash (-t 0 Explained)</a>
+</li>
+                                    
+<li>
+    <a href="../../../Bash/bashrc/" class="dropdown-item">.bashrc</a>
+</li>
+                                    
+<li>
+    <a href="../../../Bash/find/" class="dropdown-item">A collection of different find commands</a>
+</li>
+                                    
+<li>
+    <a href="../../../Bash/tar/" class="dropdown-item">Tar-Komprimierung &amp; Entpacken</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false">Uni Module</a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Lineare Algebra I</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Elementarmatrizen und ihre NumPy-Entsprechungen</a>
+</li>
+            
+<li>
+    <a href="../notes/" class="dropdown-item">Einige Notizen</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Docker</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../docker/change-default-path/" class="dropdown-item">Changing data path</a>
+</li>
+                                    
+<li>
+    <a href="../../../docker/detect-image-size/" class="dropdown-item">Docker Disk Usage – How to Find Out What’s Taking Space</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ffmpeg</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../ffmpeg/loop/" class="dropdown-item">Looping a video or more</a>
+</li>
+                                    
+<li>
+    <a href="../../../ffmpeg/speedup/" class="dropdown-item">Speeding Up a video</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Firewall</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../firewall/fail2ban/" class="dropdown-item">Fail2ban</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Git</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../git/Copy%20a%20branch%20to%20another%20repository/" class="dropdown-item">Copy a branch to another repository</a>
+</li>
+                                    
+<li>
+    <a href="../../../git/Wip%20everything%20from%20branch/" class="dropdown-item">Considering you want to delete main with all commits</a>
+</li>
+                                    
+<li>
+    <a href="../../../git/rename-commit-author/" class="dropdown-item">How to Rename Author and Email of a Commit</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Latex</a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tabularray</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../latex/tabularray/colspec/" class="dropdown-item">Documentation: colspec in tabularray (LaTeX)</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Macos</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../macos/Disabling-Turbo-Boost/" class="dropdown-item">MacBook Pro (Late 2013) Thermal &amp; Performance Optimization Guide</a>
+</li>
+                                    
+<li>
+    <a href="../../../macos/current_wattage/" class="dropdown-item">Current wattage</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ruby</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../ruby/install-on-macos/" class="dropdown-item">Install on macos</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vim</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../vim/Command-line-mode/" class="dropdown-item">Command-line mode</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vscode</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../vscode/disable-ai-features/" class="dropdown-item">Disable Built-In Ai Features</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Web dev</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../web-dev/Create-React-Projekt-with-Router/" class="dropdown-item">How to create a react Project with browser routing</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                            <li class="nav-item">
+                                <a rel="prev" href="../../../Bash/tar/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../notes/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="true">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../../../js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#elementarmatrizen-und-ihre-numpy-entsprechungen" class="nav-link">Elementarmatrizen und ihre NumPy-Entsprechungen</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#1-zeilenvertauschung-e_k-leftrightarrow-l" class="nav-link">1. Zeilenvertauschung (\(E_{k \leftrightarrow l}\))</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#2-zeilenskalierung-e_s-cdot-k" class="nav-link">2. Zeilenskalierung (\(E_{s \cdot k}\))</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#3-zeilenaddition-e_k-oversetsto-l" class="nav-link">3. Zeilenaddition (\(E_{k \overset{s}{\to} l}\))</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ubersicht-cheatsheet" class="nav-link">Übersicht / Cheatsheet</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#text" class="nav-link">```text</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#elementarmatrizen-und-python-numpy-equivalents" class="nav-link">ELEMENTARMATRIZEN UND PYTHON (NUMPY) EQUIVALENTS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="elementarmatrizen-und-ihre-numpy-entsprechungen">Elementarmatrizen und ihre NumPy-Entsprechungen<a class="headerlink" href="#elementarmatrizen-und-ihre-numpy-entsprechungen" title="Permanent link"></a></h1>
+<p>Elementarmatrizen stellen die drei grundlegenden Typen von elementaren Zeilenumformungen in der Linearen Algebra dar (siehe auch <em>Fact 1.2.22 / Def 1.2.21</em>). </p>
+<p>In der Praxis (z. B. mit <strong>NumPy</strong>) führt man diese Operationen nicht durch Matrixmultiplikation aus, sondern nutzt speichereffizientes <strong>Slicing</strong> (In-Place-Operationen).</p>
+<hr>
+<h2 id="1-zeilenvertauschung-e_k-leftrightarrow-l">1. Zeilenvertauschung (<span class="arithmatex">\(E_{k \leftrightarrow l}\)</span>)<a class="headerlink" href="#1-zeilenvertauschung-e_k-leftrightarrow-l" title="Permanent link"></a></h2>
+<p>Multipiziert man eine Matrix <span class="arithmatex">\(A\)</span> von links mit <span class="arithmatex">\(E_{k \leftrightarrow l}\)</span>, werden die <span class="arithmatex">\(k\)</span>-te und die <span class="arithmatex">\(l\)</span>-te Zeile miteinander vertauscht.</p>
+<ul>
+<li>
+<p><strong>Matrix-Form:</strong>
+  $<span class="arithmatex">\(E_{k \leftrightarrow l} = \begin{pmatrix} 1 &amp; &amp; &amp; &amp; &amp; \\ &amp; \ddots &amp; &amp; &amp; &amp; \\ &amp; &amp; 0 &amp; \dots &amp; 1 &amp; \\ &amp; &amp; \vdots &amp; \ddots &amp; \vdots &amp; \\ &amp; &amp; 1 &amp; \dots &amp; 0 &amp; \\ &amp; &amp; &amp; &amp; &amp; \ddots &amp; 1 \end{pmatrix} \begin{matrix} \\ \\ \leftarrow \text{Zeile } k \\ \\ \leftarrow \text{Zeile } l \\ \\ \end{matrix}\)</span>$</p>
+</li>
+<li>
+<p><strong>NumPy Equivalent:</strong>
+  <code>python
+  # Tauscht Zeile k und Zeile l
+  A[[k, l]] = A[[l, k]]</code></p>
+</li>
+</ul>
+<hr>
+<h2 id="2-zeilenskalierung-e_s-cdot-k">2. Zeilenskalierung (<span class="arithmatex">\(E_{s \cdot k}\)</span>)<a class="headerlink" href="#2-zeilenskalierung-e_s-cdot-k" title="Permanent link"></a></h2>
+<p>Multipliziert die <span class="arithmatex">\(k\)</span>-te Zeile mit einem Skalar <span class="arithmatex">\(s \in K^\times\)</span> (<span class="arithmatex">\(s \neq 0\)</span>).</p>
+<ul>
+<li>
+<p><strong>Matrix-Form:</strong>
+  $<span class="arithmatex">\(E_{s \cdot k} = \begin{pmatrix} 1 &amp; &amp; &amp; &amp; \\ &amp; \ddots &amp; &amp; &amp; \\ &amp; &amp; s &amp; &amp; \\ &amp; &amp; &amp; \ddots &amp; \\ &amp; &amp; &amp; &amp; 1 \end{pmatrix} \begin{matrix} \\ \\ \leftarrow \text{Zeile } k \\ \\ \\ \end{matrix}\)</span>$</p>
+</li>
+<li>
+<p><strong>NumPy Equivalent:</strong>
+  <code>python
+  # Multipliziert Zeile k mit dem Faktor s
+  A[k] = s * A[k]</code></p>
+</li>
+</ul>
+<hr>
+<h2 id="3-zeilenaddition-e_k-oversetsto-l">3. Zeilenaddition (<span class="arithmatex">\(E_{k \overset{s}{\to} l}\)</span>)<a class="headerlink" href="#3-zeilenaddition-e_k-oversetsto-l" title="Permanent link"></a></h2>
+<p>Addiert das <span class="arithmatex">\(s\)</span>-fache der <span class="arithmatex">\(k\)</span>-ten Zeile zur <span class="arithmatex">\(l\)</span>-ten Zeile (<span class="arithmatex">\(Zeile_l \leftarrow Zeile_l + s \cdot Zeile_k\)</span>).</p>
+<ul>
+<li>
+<p><strong>Matrix-Form:</strong>
+  $<span class="arithmatex">\(E_{k \overset{s}{\to} l} = \begin{pmatrix} 1 &amp; &amp; &amp; &amp; \\ &amp; \ddots &amp; &amp; &amp; \\ &amp; &amp; 1 &amp; &amp; \\ &amp; &amp; \vdots &amp; \ddots &amp; \\ &amp; &amp; s &amp; \dots &amp; 1 \end{pmatrix} \begin{matrix} \\ \\ \leftarrow \text{Zeile } k \\ \\ \leftarrow \text{Zeile } l \text{ (Eintrag } s \text{ an Spalte } k\text{)} \end{matrix}\)</span>$</p>
+</li>
+<li>
+<p><strong>NumPy Equivalent:</strong>
+  <code>python
+  # Addiert das s-fache der Zeile k zu Zeile l
+  A[l] += s * A[k]</code></p>
+</li>
+</ul>
+<hr>
+<h2 id="ubersicht-cheatsheet">Übersicht / Cheatsheet<a class="headerlink" href="#ubersicht-cheatsheet" title="Permanent link"></a></h2>
+<h1 id="text">```text<a class="headerlink" href="#text" title="Permanent link"></a></h1>
+<h1 id="elementarmatrizen-und-python-numpy-equivalents">ELEMENTARMATRIZEN UND PYTHON (NUMPY) EQUIVALENTS<a class="headerlink" href="#elementarmatrizen-und-python-numpy-equivalents" title="Permanent link"></a></h1>
+<ol>
+<li>ZEILENVERTAUSCHUNG (Row Swap):</li>
+<li>Mathe:   E_{k &lt;-&gt; l} * A  ==&gt;  Tauscht Zeile k und Zeile l</li>
+<li>
+<p>Python:  A[[k, l]] = A[[l, k]]</p>
+</li>
+<li>
+<p>ZEILENSKALIERUNG (Row Scaling):</p>
+</li>
+<li>Mathe:   E_{s * k} * A    ==&gt;  Multipliziert Zeile k mit Skalar s (s != 0)</li>
+<li>
+<p>Python:  A[k] = s * A[k]</p>
+</li>
+<li>
+<p>ZEILENADDITION (Row Addition):</p>
+</li>
+<li>Mathe:   E_{k --s--&gt; l} * A ==&gt; Addiert s * (Zeile k) zu Zeile l</li>
+<li>Python:  A[l] += s * A[k]</li>
+</ol>
+<hr>
+<p>HINWEIS ZUR INDIZIERUNG:
+Mathematik verwendet gewöhnlich 1-basierte Indizes (Zeile 1..n).
+Python / NumPy verwendet stets 0-basierte Indizes (Zeile 0..n-1).
+================================================================================</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../elementarmatrix.png" data-desc-position="bottom"><img align="left" alt="Elementarmatrix" src="../elementarmatrix.png"></a></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+        <script src="../../../javascripts/katex.js"></script>
+
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body></html>
